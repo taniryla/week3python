@@ -8,16 +8,16 @@ def show_homepage():
         print("---------------------------------------------")
         print("|              5.    Exit                    |")
         print("---------------------------------------------")
-
         option = input("Choose an option:")
-        if input == "1":
-            print("1")
-        elif input == "2":
-            print("2")
-        elif input == "3":
-            print("3")
-        elif input == "4":
-            print("4")
+        if option == "1":
+            print("TODO: Write Login Functionality")
+        elif option == "2":
+            print("TODO: Write Register Functionality")
+        elif option == "3":
+            print("TODO: Write Donate Functionality")
+        elif option == "4":
+            print("TODO: Write Donations Functionality")
         else:
-            print("5")
+            print("Goodbye!")
             break
+        
