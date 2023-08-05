@@ -19,6 +19,8 @@ while True:
         username = input("Username:")
         password = input("Password:")
         authorized_user = login(database, username, password)
+        if authorized_user == "":
+            print("\nUser not found. Please register.")
     elif option == "2":
         print("TODO: Write Register Functionality")
     elif option == "3":
