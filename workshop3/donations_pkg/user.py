@@ -1,4 +1,4 @@
-
+import math
 
 def login(database = {}, username = "", password = ""):
     for i in database:
@@ -18,3 +18,9 @@ def register(database, username):
         else:
             print(f"{username} has been registered.")
             return username
+        
+def donate(username):
+    donation_amt = input("Enter amount to donate:")
+    donation_string = print(f"{username} donated ${float(donation_amt)}" )
+    print("Thank you!!")
+    return donation_string
