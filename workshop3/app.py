@@ -1,4 +1,4 @@
-from donations_pkg.homepage import show_homepage
+from donations_pkg.homepage import show_homepage, show_donations
 from donations_pkg.user import login, register, donate
 
 
@@ -37,11 +37,12 @@ while True:
             print("You are not logged in")
         else:
             donation_string = donate(authorized_user)
+            # needs to be fixed
             donations.append(donation_string)
-            print(f"{donation_string}")
+            print(f"{donations}")
            
     elif option == "4":
-        print("TODO: Write Donations Functionality")
+        show_donations(donations)
     else:
         print("Goodbye!")
         break

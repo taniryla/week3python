@@ -10,3 +10,10 @@ def show_homepage():
     print("|              5.    Exit                    |")
     print("---------------------------------------------")
         
+def show_donations(donations):
+    print("\n--- All Donations ---")
+    if donations == "":
+        print("Currently, there are no donations")
+    else:
+        for i in donations:
+            print(f"{donations}")
