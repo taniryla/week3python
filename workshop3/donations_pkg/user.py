@@ -9,3 +9,12 @@ def login(database = {}, username = "", password = ""):
         else:
             print("User not in the database")
             return ""
+        
+def register(database, username):
+    for i in database:
+        if i == username:
+            print("Username already registered")
+            return ""
+        else:
+            print(f"{username} has been registered.")
+            return username
