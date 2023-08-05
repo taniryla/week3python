@@ -11,13 +11,13 @@ def show_homepage():
 
         option = input("Choose an option:")
         if input == "1":
-            account.show_balance(balance)
+            print("1")
         elif input == "2":
-            account.deposit(balance)
-            print(f"Current Balance: ${float(balance)}")
+            print("2")
         elif input == "3":
-            account.withdraw(balance)
-            print(f"Current Balance: ${float(balance)}")
+            print("3")
+        elif input == "4":
+            print("4")
         else:
-            account.logout(name)
+            print("5")
             break
